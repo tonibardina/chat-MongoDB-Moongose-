@@ -6,6 +6,8 @@
     "express": "latest",
     "jade": "latest",
     "jquery": "^3.2.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.13.0",
     "socket.io": "latest"
   },
   "scripts": {

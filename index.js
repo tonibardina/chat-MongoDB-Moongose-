@@ -2,6 +2,10 @@ var express = require('express')
 var app = express()
 var port = 3000
 
+var mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost/test', { useMongoClient: true })
+mongoose.Promise = global.Promise
+
 app.set('views', __dirname + '/views/templates')
 app.set('view engine', 'jade')
 app.engine('jade', require('jade').__express)
